@@ -16,8 +16,8 @@ services:
   wordpress:
     image: wordpress:latest
     volumes:
-      - ./config/php.conf.uploads.ini:usr/local/etc/php/conf.d/uploads.ini
-      - ./wp-app:/var/www/htmls
+      - ./config/php.conf.uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+      - ./wp-app:/var/www/html
     environment:
       TZ: America/Sao_Paulo
       WORDPRESS_DB_HOST: db
