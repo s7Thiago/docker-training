@@ -24,6 +24,12 @@ ___
 ___
 * ## Rodar um container a partir da imagem criada
 > ```sh
-> docker run -d -p 3000:3000 <image-name>
+> docker run -d -p 3000:3000 
 > ```
 >> O comando acima roda um container baseada na nova imagem chamada my-getting-started:latest que foi criada no início destas instruções. A porta 3000 do *container* será associada com a porta 3000 da máquina *host*
+___
+* ## Inspecionar um container:
+> ```sh
+> docker container inspect <id ou name>
+> ```
+___
